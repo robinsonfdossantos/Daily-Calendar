@@ -1,99 +1,52 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Third-Party APIs: Work Day Scheduler
 
-## Your Task
+## Description
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This site was developed using an initial Javascript, HTML and CSS code provided by the tutors as a base to create a Work Day Scheduler. They provided much of the HTML framework, where they created classes and linked them to CSS to style the site.
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+The challenge was to extend the HTML code and create the interaction using JavaScript to have a business hours scheduler, where all user inputs are saved in LocalStorage and must remain there even if the page is refreshed.
 
-## User Story
+## Usage
+The webpage has been developed using VS Code, where the structure was created in HTML, CSS and the interaction with the end-user was developed using Javascript. 
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+The webpage is an interactive way to help the end-users manage their work activities and create reminders.
 
-## Acceptance Criteria
+The current day and current time are displayed in the page header, which is used to control the page.
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+The animation below shows how the page will be presented to the user, so it is possible to better understand its functionality, where each line represents an hour of business hours.
 
-The following animation demonstrates the application functionality:
+<img src="./Assets/images/webpage-animation.gif" alt="showing the entire page" width="40%" height="40%" />
 
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+It is worth mentioning that the lines receive different colors, it was created to alert the user about the current time, where the current time will be displayed in red, while the past will receive a light gray and the future hours will receive green.
 
-## Grading Requirements
+In front of each line a blue button with a save icon is allocated, which must be selected after the entries in the corresponding line to archive the data in localStorage.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+## Development & Deployment
 
-This Challenge is graded based on the following criteria:
+The code for creating the site was developed in Javascript, where it was possible to create interaction using events such as "click" on the button and access pre-developed libraries such as DOM, jQuery and Dayjs.
 
-### Technical Acceptance Criteria: 40%
+The code was created using DOM, jQuery and Day.js, which summarized the code and connected elements by ID or using methods provided by them.
 
-* Satisfies all of the above acceptance criteria plus the following:
+The screenshot below shows part of the code where a function is created using jQuery and calling the Dayjs framework to display and style dates and times.
 
-  * Uses a date utility library to work with date and time
+<img src="./Assets/images/javascript-code.png" alt="code with jQuery's and Day.js" width="40%" height="40%" />
 
-### Deployment: 32%
+### Deployed Website
 
-* Application deployed at live URL
+To visit the website, use the link below.
 
-* Application loads with no errors
+https://robinsonfdossantos.github.io/Daily-Calendar/
 
-* Application GitHub URL submitted
+For more information, use the browser's DevTools by typing Ctrl + Shift + I.
 
-* GitHub repo contains application code
+## Credits
 
-### Application Quality: 15%
+Members of the Bootcamp team.
 
-* Application user experience is intuitive and easy to navigate
+Day.js library.
 
-* Application user interface style is clean and polished
+## License
 
-* Application resembles the mock-up functionality provided in the Challenge instructions
+Licensed under the MIT license.
 
-### Repository Quality: 13%
 
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
