@@ -15,7 +15,7 @@ The current day and current time are displayed in the page header, which is used
 
 The animation below shows how the page will be presented to the user, so it is possible to better understand its functionality, where each line represents an hour of business hours.
 
-<img src="./Assets/images/webpage-animation.gif" alt="showing the entire page" width="40%" height="40%" />
+<img src="./Assets/images/webpage-animation.gif" alt="showing the entire page" width="70%" height="70%" />
 
 It is worth mentioning that the lines receive different colors, it was created to alert the user about the current time, where the current time will be displayed in red, while the past will receive a light gray and the future hours will receive green.
 
@@ -29,7 +29,7 @@ The code was created using DOM, jQuery and Day.js, which summarized the code and
 
 The screenshot below shows part of the code where a function is created using jQuery and calling the Dayjs framework to display and style dates and times.
 
-<img src="./Assets/images/javascript-code.png" alt="code with jQuery's and Day.js" width="40%" height="40%" />
+<img src="./Assets/images/javascript-code.png" alt="code with jQuery's and Day.js" width="60%" height="60%" />
 
 ### Deployed Website
 
